@@ -30,6 +30,8 @@ jobs:
       #   uses: actions.setup-node@v3
       #   with:
       #     node-version: 18
+      - name: Install dependency
+        run: npm ci
       - name: Run build
         run: npm run build
       - name: Development
