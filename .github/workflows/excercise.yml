@@ -11,12 +11,12 @@ jobs:
       #   with:
       #     node-version: 18
       - name: Install dependency
-        uses: npm ci
+        run: npm ci
       - name: Run lint
-        uses: npm run lint
+        run: npm run lint
       - name: Run test
-        uses: npm run test
+        run: npm run test
       - name: Run build
-        uses: npm run build
+        run: npm run build
 
       
